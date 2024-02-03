@@ -1,0 +1,106 @@
+/*Feedback Form Code */
+
+body {
+    background-color: aquamarine;
+    background-image: url(Images/Feedbek.png);
+    backdrop-filter: blur(10px);
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+.btn{
+    background-color: rgb(0, 68, 255); color:#00ff08; 
+    border-radius:8px;
+}
+.popup{
+    width:500px;
+    background:hsl(0, 0%, 100%);
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 35px 35px;
+    text-decoration-color: aliceblue;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+.close-popup {
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+#tick{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 65%;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.192);
+}
+.popup h2{
+    font-size:40px;
+    font-weight:500;
+    margin:30px 0 10px;
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #8400ff;
+    color:antiquewhite;
+    border:0;
+    outline:none;
+    font-size: 20px;
+    border-radius: 4.5px;
+    cursor: pointer;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.192);
+}
+.page{
+    text-align: center;
+    font-family: Pangolin, 'Courier New', Courier, monospace;
+}
+.page a{
+    color:rgb(8, 8, 8);
+    text-decoration-line: none;
+    padding: 8.5px 16px;
+    display: inline-block;
+}
+.page a.active{
+    background-color:hsl(221, 69%, 47%);
+    border-radius: 4.5px;
+    font-weight: bolder;
+}
+.page a:hover:not(.active){
+    background-color: rgba(189, 189, 189, 0.568);
+    border-radius: 4.5px;
+}
+
+#FeedbackForm, #head{
+    font-family: Pangolin, 'Courier New', Courier, monospace;
+}
+#Copyright{
+    text-align: center;
+    margin: 300px;
+    margin-bottom: 0;
+    color: rgb(192, 192, 255);
+}

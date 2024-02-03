@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mental Health">
+    <meta name="keywords" content="Mindfullness, Yoga, Health, Mental">
+    <meta name="author" content="Teeseekay">
+    <link rel="stylesheet" href="Design(CSS).css">
+    <title>Feedback Form For My Website</title>
+    <link rel="stylesheet" href="FeedBackFormDesign(CSS).css">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <div class="page">
+        <a href="page4.html"><--</a>
+        <a href="AFantasticWebsite.html">1(Main Menu)</a>
+        <a href="page2.html">2</a>
+        <a href="page3.html">3</a>
+        <a href="page4.html">4</a>
+        <a href="FeedbackForm.html" class="active">5(Feedback)</a>
+        <a href="AFantasticWebsite.html">--></a>
+    </div>
+</head>
+<body>
+
+<form id="FeedbackForm">
+    <h1>Please click submit 2 times after you fill the form. Sorry for the inconvenience.</h1>
+    <div>
+    <label for="Name">Enter Username:</label>
+    <input type="text" id="name" name="name" required placeholder="Jason...">
+
+    <label for="email">Enter Email:</label>
+    <input type="email" id="email" name="email" required placeholder="Spam@gmail.com...">
+
+    <label for="feedback">Feedback:</label>
+    <textarea id="feedback" name="feedback" rows="4" required placeholder="Enter Your Feedback Here..."></textarea>
+
+    <button type="reset" class="btn">Reset All</button>
+        <button type="submit" class="btn" onclick="openPopup()">Submit Feedback</button>
+        <div class="popup" id="popup">
+            <img src="Images/Tick.jpg" id="tick">
+            <h2>Thank you!</h2>
+            <p>Your opinion has been submitted. Thanks again for reviewing!</p>
+            <button type="button" class="btn" onclick="closePopup()">Sure</button>
+        </div>
+    </div>
+</form>
+
+<footer id="Copyright">
+    <hr>
+    <br>
+    Author:Tan Chor Koon<br>
+    &copy;Copyright Reserved.
+    </footer>
+
+<script>
+let popup = document.getElementById("popup");
+
+function openPopup(){
+    popup.classList.add("open-popup");
+}
+function closePopup(){
+    popup.classList.add("close-popup");
+}
+</script>
+
+</body>
+</html>
